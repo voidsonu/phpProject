@@ -3,17 +3,17 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "db_hotel";
+$dbname = "";
 
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $dbname);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-
-
+else{
+    echo "connection was successful<br>";
+}
 
 ?> 
