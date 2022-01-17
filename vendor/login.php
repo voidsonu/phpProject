@@ -23,9 +23,7 @@ if($conn->connect_error) {
             }else{
                 echo "<h2>Invalid Email try again</h2>";
             }
-        }
-    
-   
-        }
+     }
+ }
 
 ?>

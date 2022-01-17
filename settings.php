@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include('connection.php');?>
 <head>
 
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Cards</title>
+    <title>CoopEarn- Generate Coupons</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,14 +35,14 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">CoopEarn</div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
@@ -52,23 +52,23 @@
             <hr class="sidebar-divider">
 
             <!-- Heading -->
-            <div class="sidebar-heading">
-                Interface
-            </div>
+            <!--<div class="sidebar-heading">
+                Coupons
+            </div>-->
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-                    aria-controls="collapseTwo">
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
+                    <span>Coupons</span>
                 </a>
-                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
-                    data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item active" href="cards.html">Cards</a>
+                        <h6 class="collapse-header">My coupons:</h6>
+                        <a class="collapse-item" href="buttons.html">Generate coupon</a>
+                        <a class="collapse-item" href="cards.html">Manage coupons</a>
+                        <a class="collapse-item" href="cards.html">Print coupons</a>
                     </div>
                 </div>
             </li>
@@ -84,10 +84,10 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                        <a class="collapse-item" href="utilities-color.html">My Dealers</a>
+                        <a class="collapse-item" href="utilities-border.html">My products</a>
+                        <a class="collapse-item" href="utilities-animation.html">Video Gallery</a>
+                        <a class="collapse-item" href="utilities-animation.html">Coupon Templates</a>
                     </div>
                 </div>
             </li>
@@ -96,31 +96,36 @@
             <hr class="sidebar-divider">
 
             <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
+           <!--  <div class="sidebar-heading">
+                Data & Reports
+            </div>  -->
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
+                    <span>Accounts</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <h6 class="collapse-header">Money</h6>
+                        <a class="collapse-item" href="login.html">wallet Money</a>
+                        <a class="collapse-item" href="register.html">Ledger</a>
+                        <a class="collapse-item" href="forgot-password.html">Transactions</a>
                         <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                        
                     </div>
                 </div>
             </li>
 
+           <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Mechanic Log</span></a>
+            </li> 
+            
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
@@ -128,11 +133,11 @@
                     <span>Charts</span></a>
             </li>
 
-            <!-- Nav Item - Tables -->
+            <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Settings</span></a>
             </li>
 
             <!-- Divider -->
@@ -141,6 +146,13 @@
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message -->
+            <div class="sidebar-card d-none d-lg-flex">
+                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
+                <p class="text-center mb-2"><strong>CoopEarn Ads</strong> help you get better reach in the available users</p>
+                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Post Ad now!</a>
             </div>
 
         </ul>
@@ -222,7 +234,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <div class="small text-gray-500">December 31, 2021</div>
                                         <span class="font-weight-bold">A new monthly report is ready to download!</span>
                                     </div>
                                 </a>
@@ -233,8 +245,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
-                                        $290.29 has been deposited into your account!
+                                        <div class="small text-gray-500">December 1, 2021</div>
+                                        ₹2500.00 has been received from your account!
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -244,8 +256,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for your account.
+                                        <div class="small text-gray-500">November 14, 2021</div>
+                                        Wallet Alert: Your wallet balance is low. <strong> Add money to your wallet</strong>
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
@@ -273,9 +285,8 @@
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
-                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
-                                            problem I've been having.</div>
-                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                        <div class="text-truncate">Hi there! You have 2500 reach on your 1st video.</div>
+                                        <div class="small text-gray-500">CoopEarn Team· 58m</div>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -285,9 +296,8 @@
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
-                                        <div class="text-truncate">I have the photos that you ordered last month, how
-                                            would you like them sent to you?</div>
-                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                        <div class="text-truncate">Comment: Is this engine oil suitable for bike as well?</div>
+                                        <div class="small text-gray-500">Ravi Mistri · 1d</div>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -297,9 +307,8 @@
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with
-                                            the progress so far, keep up the good work!</div>
-                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                        <div class="text-truncate">Comment: Amazing offer!</div>
+                                        <div class="small text-gray-500">Gangaram · 2d</div>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -309,9 +318,8 @@
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div>
-                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
-                                            told me that people say this to all dogs, even if they aren't good...</div>
-                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                        <div class="text-truncate">Liked your video</div>
+                                        <div class="small text-gray-500">Somu · 2w</div>
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
@@ -324,7 +332,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Demo Company Name</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -357,63 +365,36 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
-                     <!-- Page Heading -->
-                     <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-                     <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-                         For more information about DataTables, please visit the <a target="_blank"
-                             href="https://datatables.net">official DataTables documentation</a>.</p>
-                             <!-- Table that needs to show  from datbase -->
-                             <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th>Sr.No.</th>
-                                                    <th>Name</th>
-                                                    <th>Company</th>
-                                                    <th>E-mail</th>
-                                                </tr>
-                                            </thead>
-                                            <tfoot>
-                                                <tr>
-                                                    <th>Sr.No.</th>
-                                                    <th>Name</th>
-                                                    <th>Company</th>
-                                                    <th>E-mail</th>
-                                                </tr>
-                                            </tfoot>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Tiger Nixon</td>
-                                                    <td>System Architect</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>61</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Garrett Winters</td>
-                                                    <td>Accountant</td>
-                                                    <td>Tokyo</td>
-                                                    <td>63</td>                                              
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                             <!-- End of the table -->
+				
+            <!-- Bread crumb -->
+            
+            <!-- End Bread crumb -->     
+                                
+            <!-- Container fluid  -->
+            <div class="container-fluid">
+                <!-- Start Page Content -->
+                
+                <!-- End PAge Content -->
+            </div>
+
+                                        
+                <!-- /# row -->
+
+
+                <!-- End PAge Content -->
+            </div>
+            <!-- End Container fluid  -->
+         
+</body>
+
+</html>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
+            
             <!-- End of Footer -->
 
         </div>
